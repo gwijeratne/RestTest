@@ -22,9 +22,4 @@ public class HelloController {
         List<String> children = Arrays.asList("JAck", "John", "Jacobs");
         return new HelloBean("Hello Bean!!1", 45, children);
     }
-
-    @GetMapping(path ="/hello/{name}")
-    public String getHelloPathVar(@PathVariable String name){
-        return "Hello " + name + " !!!";
-    }
 }
